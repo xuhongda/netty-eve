@@ -86,7 +86,7 @@
                     <archive>
                         <!-- 清单文件，设置入口类和classpath -->
                         <manifest>
-                            <mainClass>com.xu.netty.first.ServerTest</mainClass>
+                            <mainClass>netty.first.ServerTest</mainClass>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                         </manifest>
@@ -99,6 +99,7 @@
                     </classesDirectory>
                 </configuration>
             </plugin>
+
             <!-- 拷贝依赖的jar包到lib目录 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -118,6 +119,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+
             <!-- 解决资源文件的编码问题 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
