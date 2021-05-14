@@ -14,7 +14,7 @@
 
     <appender name="file"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>../logs/car.log</file>
+        <file>../logs/stdout.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>logs/netty.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
